@@ -8,7 +8,7 @@ real(8,1,0
 real(0,3,4,149,0
 {6,43,81,8,45,80->L1
 For(theta,1,6
-real(7,7,25+(theta=3)+72(theta>3)-2(theta=6),L1(theta),34-(theta=3)-3(theta=4 or theta=5),0,0
+real(7,7,25+(theta=3)+72(theta>3)-2(theta=6),L1(theta),34-(theta=3)-3(theta=4 or theta=5),34-(theta=3)-3(theta=4 or theta=5),0,0
 End
 real(7,5,42,6,42,39,0,0
 real(7,5,25,23,58,23,0,0
