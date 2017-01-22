@@ -6,12 +6,10 @@ Lbl A
 real(0,1,1
 real(8,1,0
 real(0,3,4,149,0
-real(7,7,25,6,34,34,0,0
-real(7,7,25,43,34,34,0,0
-real(7,7,26,81,33,33,0,0
-real(7,7,97,8,31,31,0,0
-real(7,7,97,45,31,31,0,0
-real(7,7,95,80,34,34,0,0
+{6,43,81,8,45,80->L1
+For(theta,1,6
+real(7,1,25+(theta=3)+72(theta>3)-2(theta=6),L1(theta),34-(theta=3)-3(theta=4 or theta=5),0,0
+End
 real(7,5,42,6,42,39,0,0
 real(7,5,25,23,58,23,0,0
 real(7,5,36,43,36,76,0,0
@@ -24,21 +22,19 @@ real(7,5,50,81,50,113,0,0
 real(7,5,26,89,58,89,0,0
 real(7,5,26,97,58,97,0,0
 real(7,5,26,105,58,105,0,0
-
 real(7,5,111,81,96,96,0,0
 real(7,5,111,113,96,97,0,0
 real(7,5,110,113,128,96,0,0
 real(7,5,128,97,112,81,0,0
-"2,x,2"->Str1
-Ans:Str1
+"2,x,2
 real(6,0,16,10,24,44,0
-"3,x,3"->Str1
+"3,x,3
 real(6,0,16,48,24,44,0
-"4,x,4"->Str1
+"4,x,4
 real(6,0,16,85,24,44,0
-"5,x,5"->Str1
+"5,x,5
 real(6,0,85,10,24,44,0
-"6,x,6"->Str1
+"6,x,6
 real(6,0,85,48,24,44,0
 "S,k,e,w,b"->Str1
 real(6,0,85,78,24,44,0
@@ -81,7 +77,6 @@ real(7,5,103,8,103,38,0,0
 real(7,5,109,8,109,38,0,0
 real(7,5,115,8,115,38,0,0
 real(7,5,121,8,121,38,0,0
-
 Lbl B
 real(7,7,X,Y,36,36,135,0
 getKey->K
@@ -123,11 +118,9 @@ If X=94 and Y=5:Goto 5
 If X=94 and Y=42:Goto 6
 If X=94 and Y=79:Goto SK
 Return
-
 Lbl 2
 real(0,3,4,149,0
-If A=0:3->A
-If A=4:1->A
+3(A=0)+1(A=4->A
 If A=2 or A=3
 Then
 	real(7,7,10,40,25,25,0,0
@@ -143,25 +136,22 @@ End
 If A=1
 Then
 	"page.1,2x2"->Str3
-	Ans:Str3
 	real(6,0,0,0,135,44,0
 	"Solving,first,intuitiv,didn't i,any inst"->Str1
 	"the,layer is,e so I,nclude,ructions"->Str2
-	Ans:Str1
+	Str1
 	real(6,0,16,40,24,44,0
-	Ans:Str2
+	Str2
 	real(6,0,80,40,24,44,0
 End
 If A=2
 Then
 	"page.2,2x2"->Str3
-	Ans:Str3
 	real(6,0,0,0,135,44,0
 End
 If A=3
 Then
 	"page.3,2x2"->Str3
-	Ans:Str3
 	real(6,0,0,0,135,44,0
 End
 Lbl 2A
@@ -187,43 +177,36 @@ If A=8:1->A
 If A=1
 Then
 	"page.1,3x3"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=2
 Then
 	"page.2,3x3"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=3
 Then
 	"page.3,3x3"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=4
 Then
 	"page.4,3x3"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=5
 Then
 	"page.5,3x3"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=6
 Then
 	"page.6,3x3"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=7
 Then
 	"page.7,3x3"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 Lbl 3A
@@ -233,7 +216,6 @@ If K=24:Then:A-1->A:Goto 3:End
 If K=26:Then:A+1->A:Goto 3:End
 Goto 3A
 Return
-
 Lbl 4
 real(0,3,4,149,0
 If A=0:5->A
@@ -241,31 +223,26 @@ If A=6:1->A
 If A=1
 Then
 	"page.1,4x4"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=2
 Then
 	"page.2,4x4"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=3
 Then
 	"page.3,4x4"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=4
 Then
 	"page.4,4x4"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=5
 Then
 	"page.5,4x4"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 Lbl 4A
@@ -283,31 +260,26 @@ If A=6:1->A
 If A=1
 Then
 	"page.1,5x5"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=2
 Then
 	"page.2,5x5"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=3
 Then
 	"page.3,5x5"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=4
 Then
 	"page.4,5x5"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=5
 Then
 	"page.5,5x5"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 Lbl 5A
@@ -325,61 +297,51 @@ If A=11:1->A
 If A=1
 Then
 	"page.1,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=2
 Then
 	"page.2,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=3
 Then
 	"page.3,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=4
 Then
 	"page.4,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=5
 Then
 	"page.5,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=6
 Then
 	"page.6,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=7
 Then
 	"page.7,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=8
 Then
 	"page.8,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=9
 Then
 	"page.9,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=10
 Then
 	"page.10,6x6"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 Lbl 6A
@@ -397,13 +359,11 @@ If A=3:1->A
 If A=1
 Then
 	"page.1,Skewb"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 If A=2
 Then
 	"page.2,Skewb"->Str1
-	Ans:Str1
 	real(6,0,0,0,135,44,0
 End
 Lbl SA
